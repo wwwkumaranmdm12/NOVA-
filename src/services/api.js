@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const API_URL = "https://nova-ai-1-4nt2.onrender.com";
+const API_URL = "https://nova-ai-1-4nt2.onrender.com/chat";
 
 export const sendMessage = async (message) => {
   try {
