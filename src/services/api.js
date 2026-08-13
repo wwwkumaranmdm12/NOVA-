@@ -1,10 +1,12 @@
 import axios from "axios";
-const API_BASE_URL = "https://nova-ai-4-1z1f.onrender.com";
+
+// Render Backend URL (Trailing slash-oda check pannikonga)
+const API_BASE_URL = "https://nova-ai-4-lz1f.onrender.com";
 
 export const sendMessage = async (message) => {
   try {
     const response = await axios.post(
-      API_URL,
+      `${API_BASE_URL}/chat`, // Neenga backend-la use panra exact endpoint path-ah inga podunga (e.g., /chat or /api/chat)
       {
         message: message,
       },
